@@ -1,4 +1,4 @@
-AWT CLASSES TO REPLACE:
+AWT CLASSES TO REPLACE (53 classes):
 
 java.awt.geom.Rectangle2D
 java.awt.geom.AffineTransform
