@@ -30,8 +30,8 @@
  */
 package org.tinfour.common;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Path2D;
+import com.cyborginteractive.mobile.awt.geom.AffineTransform;
+import com.cyborginteractive.mobile.awt.geom.Path2D;
 import org.tinfour.vividsolutions.jts.math.DD;
 
 /**
@@ -249,7 +249,7 @@ public class SimpleTriangle {
     c[5] = C.getY();
     af.transform(c, 0, c, 6, 3);
 
-    Path2D path = new Path2D.Double();
+    Path2D path = new Path2D();
     path.moveTo(c[6], c[7]);
     path.lineTo(c[8], c[9]);
     path.lineTo(c[10], c[11]);

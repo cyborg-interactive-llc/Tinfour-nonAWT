@@ -33,7 +33,7 @@
  */
 package org.tinfour.semivirtual;
 
-import java.awt.geom.Rectangle2D;
+import com.cyborginteractive.mobile.awt.geom.Rectangle2D;
 import java.io.PrintStream;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -975,7 +975,7 @@ public class SemiVirtualIncrementalTin implements IIncrementalTin {
     if (Double.isInfinite(boundsMinX)) {
       return null;
     }
-    return new Rectangle2D.Double(boundsMinX, boundsMinY, boundsMaxX - boundsMinX, boundsMaxY - boundsMinY);
+    return new Rectangle2D(boundsMinX, boundsMinY, boundsMaxX - boundsMinX, boundsMaxY - boundsMinY);
   }
 
   /**

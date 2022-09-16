@@ -30,7 +30,7 @@
  */
 package org.tinfour.utils;
 
-import java.awt.geom.Point2D;
+import com.cyborginteractive.mobile.awt.geom.Point2D;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;

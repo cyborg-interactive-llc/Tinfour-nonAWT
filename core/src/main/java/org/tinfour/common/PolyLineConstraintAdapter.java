@@ -30,7 +30,7 @@
  */
 package org.tinfour.common;
 
-import java.awt.geom.Rectangle2D;
+import com.cyborginteractive.mobile.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -46,7 +46,7 @@ public abstract class PolyLineConstraintAdapter
         implements IConstraint, Iterable<Vertex> {
 
   protected final List<Vertex> list;
-  private final Rectangle2D bounds = new Rectangle2D.Double();
+  private final Rectangle2D bounds = new Rectangle2D();
   private double x = Double.NaN;
   private double y = Double.NaN;
   protected Object applicationData;

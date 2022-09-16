@@ -29,7 +29,7 @@
 
 package org.tinfour.utils;
 
-import java.awt.geom.Rectangle2D;
+import com.cyborginteractive.mobile.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

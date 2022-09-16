@@ -30,8 +30,8 @@
  */
 package org.tinfour.common;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Path2D;
+import com.cyborginteractive.mobile.awt.geom.AffineTransform;
+import com.cyborginteractive.mobile.awt.geom.Path2D;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -151,7 +151,7 @@ public class LinearConstraint extends PolyLineConstraintAdapter implements ICons
       af = new AffineTransform();
     }
     double[] c = new double[4];
-    Path2D path = new Path2D.Double();
+    Path2D path = new Path2D();
     boolean moveFlag = true;
     for (Vertex v : list) {
       c[0] = v.x;

@@ -29,9 +29,9 @@
  */
 package org.tinfour.contour;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Path2D;
-import java.awt.geom.Point2D;
+import com.cyborginteractive.mobile.awt.geom.AffineTransform;
+import com.cyborginteractive.mobile.awt.geom.Path2D;
+import com.cyborginteractive.mobile.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.List;
 import org.tinfour.contour.Contour.ContourType;
@@ -371,7 +371,7 @@ public class ContourRegion {
       af = new AffineTransform();  // identity transform
     }
     double[] xy = getXY();
-    Path2D path = new Path2D.Double();
+    Path2D path = new Path2D();
     appendPathForward(af, path, xy);
     return path;
   }
@@ -392,7 +392,7 @@ public class ContourRegion {
       af = new AffineTransform();  // identity transform
     }
     double[] xy = getXY();
-    Path2D path = new Path2D.Double();
+    Path2D path = new Path2D();
     path.setWindingRule(Path2D.WIND_EVEN_ODD);
     appendPathForward(transform, path, xy);
     for (ContourRegion child : children) {
@@ -428,7 +428,7 @@ public class ContourRegion {
    * @return a valid instance of a Point2D object
    */
   public Point2D getTestPoint() {
-    return new Point2D.Double(xTest, yTest);
+    return new Point2D(xTest, yTest);
   }
 
   /**

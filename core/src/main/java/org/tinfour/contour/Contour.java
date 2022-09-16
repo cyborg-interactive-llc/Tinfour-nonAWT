@@ -29,9 +29,9 @@
  */
 package org.tinfour.contour;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Path2D;
-import java.awt.geom.Rectangle2D;
+import com.cyborginteractive.mobile.awt.geom.AffineTransform;
+import com.cyborginteractive.mobile.awt.geom.Path2D;
+import com.cyborginteractive.mobile.awt.geom.Rectangle2D;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.tinfour.common.IQuadEdge;
@@ -269,7 +269,7 @@ public class Contour {
    * @return a valid instance
    */
   public Path2D getPath2D(AffineTransform transform) {
-    Path2D path = new Path2D.Double();
+    Path2D path = new Path2D();
     if (n >= 4) {
       double[] c = new double[n];
       transform.transform(xy, 0, c, 0, n / 2);
@@ -317,7 +317,7 @@ public class Contour {
   }
 
   public Rectangle2D getBounds(){
-    Rectangle2D r2d = new Rectangle2D.Double(xy[0], xy[1], 0, 0);
+    Rectangle2D r2d = new Rectangle2D(xy[0], xy[1], 0, 0);
     for(int i=1; i<n/2; i++){
       r2d.add(xy[i*2], xy[i*2+1]);
     }

@@ -30,8 +30,8 @@
  */
 package org.tinfour.common;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Path2D;
+import com.cyborginteractive.mobile.awt.geom.AffineTransform;
+import com.cyborginteractive.mobile.awt.geom.Path2D;
 import java.util.List;
 
 /**

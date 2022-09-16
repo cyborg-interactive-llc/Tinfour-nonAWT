@@ -22,8 +22,8 @@
 
 package org.tinfour.common;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Line2D;
+import com.cyborginteractive.mobile.awt.geom.AffineTransform;
+import com.cyborginteractive.mobile.awt.geom.Line2D;
 
 /**
  * Defines methods for accessing the data in a quad-edge

@@ -13,7 +13,7 @@
 
 package org.tinfour.common;
 
-import java.awt.geom.Rectangle2D;
+import com.cyborginteractive.mobile.awt.geom.Rectangle2D;
 import java.util.List;
 
 /**

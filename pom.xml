@@ -8,11 +8,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.tinfour</groupId>
-  <artifactId>Tinfour</artifactId>
+  <artifactId>TinfourNonAWT</artifactId>
   <version>2.1.8-SNAPSHOT</version>
   <packaging>pom</packaging>
   
-  <name>Tinfour</name>
+  <name>TinfourNonAWT</name>
   
   <description>
     Java library for Constrained Delaunay Triangulation, Voronoi Diagram,
@@ -56,9 +56,10 @@
   <modules>
     <module>analysis</module>
     <module>core</module>
-    <module>demo</module>
+    <module>rendering</module>
+    <!--<module>demo</module>-->
     <module>gis</module>
-	<module>svm</module>
+    <!--<module>svm</module>-->
   </modules>
 
   <distributionManagement>
@@ -79,19 +80,19 @@
       
       <dependency>
         <groupId>org.tinfour</groupId>
-        <artifactId>TinfourAnalysis</artifactId>
+        <artifactId>TinfourAnalysisNonAWT</artifactId>
         <version>${project.version}</version>
       </dependency>
       
       <dependency>
         <groupId>org.tinfour</groupId>
-        <artifactId>TinfourCore</artifactId>
+        <artifactId>TinfourCoreNonAWT</artifactId>
         <version>${project.version}</version>
       </dependency>
       
       <dependency>
         <groupId>org.tinfour</groupId>
-        <artifactId>TinfourGis</artifactId>
+        <artifactId>TinfourGisNonAWT</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>

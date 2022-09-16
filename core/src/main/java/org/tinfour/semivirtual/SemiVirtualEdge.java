@@ -30,8 +30,8 @@
  */
 package org.tinfour.semivirtual;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Line2D;
+import com.cyborginteractive.mobile.awt.geom.AffineTransform;
+import com.cyborginteractive.mobile.awt.geom.Line2D;
 import org.tinfour.common.IQuadEdge;
 import org.tinfour.common.Vertex;
 import static org.tinfour.edge.QuadEdgeConstants.CONSTRAINT_EDGE_FLAG;

@@ -13,9 +13,9 @@
         <version>2.1.8-SNAPSHOT</version>
     </parent>
 
-    <artifactId>TinfourCoreNonAWT</artifactId>
-    <name>CoreNonAWT</name>
-    <description>Main classes and interfaces for Tinfour</description>
+    <artifactId>TinfourRenderingNonAWT</artifactId>
+    <name>RenderingNonAWT</name>
+    <description>Rendering util classes for Tinfour</description>
 
     <dependencies>
         <dependency>

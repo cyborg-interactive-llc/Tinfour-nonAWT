@@ -30,8 +30,8 @@
  */
 package org.tinfour.common;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Path2D;
+import com.cyborginteractive.mobile.awt.geom.AffineTransform;
+import com.cyborginteractive.mobile.awt.geom.Path2D;
 import java.util.ArrayList;
 import java.util.List;
 import org.tinfour.utils.KahanSummation;
@@ -262,7 +262,7 @@ public class PolygonConstraint
       af = new AffineTransform();
     }
     double[] c = new double[4];
-    Path2D path = new Path2D.Double(Path2D.WIND_EVEN_ODD);
+    Path2D path = new Path2D(Path2D.WIND_EVEN_ODD);
     boolean moveFlag = true;
     for (Vertex v : list) {
       c[0] = v.x;

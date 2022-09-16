@@ -111,8 +111,8 @@
  */
 package org.tinfour.edge;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Line2D;
+import com.cyborginteractive.mobile.awt.geom.AffineTransform;
+import com.cyborginteractive.mobile.awt.geom.Line2D;
 import java.util.Formatter;
 import org.tinfour.common.IQuadEdge;
 import org.tinfour.common.Vertex;

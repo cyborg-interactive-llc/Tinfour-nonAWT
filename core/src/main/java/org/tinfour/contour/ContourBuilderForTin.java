@@ -29,7 +29,7 @@
  */
 package org.tinfour.contour;
 
-import java.awt.geom.Point2D;
+import com.cyborginteractive.mobile.awt.geom.Point2D;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;

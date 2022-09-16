@@ -53,7 +53,7 @@
  */
 package org.tinfour.standard;
 
-import java.awt.geom.Rectangle2D;
+import com.cyborginteractive.mobile.awt.geom.Rectangle2D;
 import java.io.PrintStream;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -1089,7 +1089,7 @@ public class IncrementalTin implements IIncrementalTin {
     if (Double.isInfinite(boundsMinX)) {
       return null;
     }
-    return new Rectangle2D.Double(
+    return new Rectangle2D(
       boundsMinX,
       boundsMinY,
       boundsMaxX - boundsMinX,
